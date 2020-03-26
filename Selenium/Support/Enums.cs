@@ -3,14 +3,14 @@
 public enum PageName
 {
     Home,
-    SignIn,
-    CreateAccount,
-    MyAccount
+    Counter,
+    FetchData
 }
 
 public enum Element
 {
-    SignInLink,
+    H1,
+    Text,
     SignInButton,
     NewUserEmail,
     ExistingUserEmail,

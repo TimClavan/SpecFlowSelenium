@@ -18,7 +18,7 @@ namespace Selenium.Pages
         public AutomationTestSite()
         {
             WebDriver = new ChromeDriver();
-            BaseUrl = "http://automationpractice.com/index.php";
+            BaseUrl = "https://blazor-demo.github.io/";
             Pages = InitializePages();
         }
 

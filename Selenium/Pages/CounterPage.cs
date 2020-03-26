@@ -5,24 +5,23 @@ using Selenium.Support;
 
 namespace Selenium.Pages
 {
-    public class HomePage : TestPage
+    public class CounterPage : TestPage
     {
-        public HomePage(ChromeDriver webDriver)
+        public CounterPage(ChromeDriver webDriver)
         {
-            Setup(webDriver);
-            Name = PageName.Home;
-            Url = "https://blazor-demo.github.io/";
+            Setup(WebDriver);
+            Name = PageName.Counter;
+            Url = "https://blazor-demo.github.io/Counter";
         }
 
         protected sealed override Collection<Locator> InitializeLocators()
         {
             return new Collection<Locator>
             {
-                new Locator(Element.H1, By.XPath("//*[@id=_e2]/h1")),
-                new Locator(Element.Text, By.XPath("//*[@id=_e2]/p"))
+                new Locator(Element.H1, By.XPath("//*[@id=_e6]/h1"))
+                
             };
         }
-
 
     }
 }
