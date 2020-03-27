@@ -32,14 +32,16 @@ namespace Selenium.Pages
 
         public void GoTo()
         {
+            
             WebDriver.Navigate().GoToUrl(BaseUrl);
+            
         }
 
         public bool PageLoaded()
         {
             try
             {
-                var waitForDocumentReady = new WebDriverWait(WebDriver, TimeSpan.FromSeconds(10));
+                var waitForDocumentReady = new WebDriverWait(WebDriver, TimeSpan.FromSeconds(10000));
                 waitForDocumentReady.Until((wdriver) =>
                     (WebDriver as IJavaScriptExecutor).ExecuteScript("return document.readyState").Equals("complete"));
                 return true;
@@ -69,11 +71,27 @@ namespace Selenium.Pages
             return true;
         }
 
+        public bool DoesTextExistOnPage(PageName pageName, Element element)
+        {
+            var locator = GetPage(pageName).GetLocator(element);
+            try
+            {
+                WebDriver.FindElement(By.XPath("//*[@id='_e2']/h1(),'Hello, World!')]"));
+            }
+            catch (NoSuchElementException noSuchElementException)
+            {
+                return false;
+            }
+            return true;
+
+        }
+
         public void ClickElementOnPage(PageName pageName, Element element)
         {
             var locator = GetPage(pageName).GetLocator(element);
+            WebDriverWait wait = new WebDriverWait(WebDriver, TimeSpan.FromSeconds(1000));
             WebDriver.FindElement(locator.FindBy).Click();
-            System.Threading.Thread.Sleep(5000);
+            //System.Threading.Thread.Sleep(5000);
         }
 
         public void EnterTextIntoInputField(PageName pageName, Element element, string text)

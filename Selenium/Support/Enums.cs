@@ -11,6 +11,7 @@ public enum Element
 {
     H1,
     Text,
+    CounterLink,
     SignInButton,
     NewUserEmail,
     ExistingUserEmail,

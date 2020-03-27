@@ -106,7 +106,7 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.When("the homepage is loaded", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 6
- testRunner.Then("the text Welcome to your new single-page application. is present", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("the text Hello, World! is present", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

@@ -28,7 +28,7 @@ namespace SpecFlow.Hooks
         [AfterScenario]
         public void Dispose()
         {
-            automationTestSite?.Dispose();
+        automationTestSite?.Dispose();
         }
 
     }

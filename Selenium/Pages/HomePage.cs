@@ -12,14 +12,16 @@ namespace Selenium.Pages
             Setup(webDriver);
             Name = PageName.Home;
             Url = "https://blazor-demo.github.io/";
+
         }
 
         protected sealed override Collection<Locator> InitializeLocators()
         {
             return new Collection<Locator>
             {
-                new Locator(Element.H1, By.XPath("//*[@id=_e2]/h1")),
-                new Locator(Element.Text, By.XPath("//*[@id=_e2]/p"))
+                new Locator(Element.H1, By.XPath("//*[@id='_e2']/h1")),
+                //new Locator(Element.Text, By.XPath("//*[@id=_e2]/p")),
+                //new Locator(Element.CounterLink, By.XPath("//*[@id='_e3']"))
             };
         }
 

@@ -26,19 +26,40 @@ namespace Blazor.Steps
         {
             automationTestSite.PageLoaded();
         }
-        
+
+        [Then(@"the text Hello, World! is present")]
+        public void ThenTheTextHelloWorldIsPresent()
+        {
+            Assert.IsTrue(automationTestSite.DoesTextExistOnPage(PageName.Home, Element.H1));
+        }
+
+
         [Then(@"the text ""(.*)"" is present")]
         public void ThenTheTextIsPresent(string p0)
         {
-            automationTestSite.DoesElementExistOnPage(PageName.Home, Element.H1);
+            Assert.IsTrue(automationTestSite.DoesTextExistOnPage(PageName.Home, Element.H1));
             //ScenarioContext.Current.Pending();
         }
 
-        [Then(@"the text Welcome to your new single-page application\. is present")]
-        public void ThenTheTextWelcomeToYourNewSingle_PageApplication_IsPresent()
+        [When(@"I click on the counter link")]
+        public void WhenIClickOnTheCounterLink()
         {
-            automationTestSite.DoesElementExistOnPage(PageName.Home, Element.Text);
+            automationTestSite.ClickElementOnPage(PageName.Home, Element.CounterLink);
+            
         }
+
+        [When(@"I click on the Incrmeent button")]
+        public void WhenIClickOnTheIncrmeentButton()
+        {
+            ScenarioContext.Current.Pending();
+        }
+
+        [Then(@"the current count is ""(.*)""")]
+        public void ThenTheCurrentCountIs(int p0)
+        {
+            ScenarioContext.Current.Pending();
+        }
+
 
     }
 }
