@@ -76,7 +76,7 @@ namespace Selenium.Pages
             var locator = GetPage(pageName).GetLocator(element);
             try
             {
-                WebDriver.FindElement(By.XPath("//*[@id='_e2']/h1(),'Hello, World!')]"));
+                WebDriver.FindElement(By.XPath("//*[@class='col-sm-9']/component/h1[.='Hello, world!']"));
             }
             catch (NoSuchElementException noSuchElementException)
             {
