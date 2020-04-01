@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework;
 using Selenium.Pages;
-using Selenium.Support;
+using System.Threading;
 using TechTalk.SpecFlow;
 
 namespace Blazor.Steps
@@ -19,6 +19,7 @@ namespace Blazor.Steps
         public void GivenINavigateToTheHomePage()
         {
             automationTestSite.GoTo();
+            Thread.Sleep(5000);
         }
         
         [When(@"the homepage is loaded")]

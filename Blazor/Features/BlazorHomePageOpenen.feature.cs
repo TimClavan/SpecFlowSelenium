@@ -19,23 +19,23 @@ namespace Blazor.Features
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.1.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [NUnit.Framework.TestFixtureAttribute(TestName="Blazor home page")]
-    [NUnit.Framework.DescriptionAttribute("Blazor home page")]
-    public partial class BlazorHomePageFeature
+    [NUnit.Framework.TestFixtureAttribute(TestName="BlazorHomePageOpenen")]
+    [NUnit.Framework.DescriptionAttribute("BlazorHomePageOpenen")]
+    public partial class BlazorHomePageOpenenFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
         private string[] _featureTags = ((string[])(null));
         
-#line 1 "BlazorHomePage.feature"
+#line 1 "BlazorHomePageOpenen.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Blazor home page", null, ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "BlazorHomePageOpenen", null, ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -73,12 +73,12 @@ namespace Blazor.Features
             testRunner.CollectScenarioErrors();
         }
         
-        [NUnit.Framework.TestCaseAttribute(TestName="Navigate to the Blazor homepage and check it out")]
-        [NUnit.Framework.DescriptionAttribute("Navigate to the Blazor homepage and check it out")]
-        public virtual void NavigateToTheBlazorHomepageAndCheckItOut()
+        [NUnit.Framework.TestCaseAttribute(TestName="Test openen home page")]
+        [NUnit.Framework.DescriptionAttribute("Test openen home page")]
+        public virtual void TestOpenenHomePage()
         {
             string[] tagsOfScenario = ((string[])(null));
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Navigate to the Blazor homepage and check it out", null, ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Test openen home page", null, ((string[])(null)));
 #line 3
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -100,13 +100,10 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 4
- testRunner.Given("I navigate to the home page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("ik navigeer naar de home page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 5
- testRunner.When("the homepage is loaded", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 6
- testRunner.Then("the text \"Hello, World!\" is present", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("wordt de titel \"Hello, World!\" getoond", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
