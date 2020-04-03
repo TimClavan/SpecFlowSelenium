@@ -108,7 +108,10 @@
   <ItemGroup>
     <Compile Include="Pages\AutomationTestSite.cs" />
     <Compile Include="Pages\BlazorHomePageObject.cs" />
+<<<<<<< HEAD
     <Compile Include="Pages\BlazorCounterPageObject.cs" />
+=======
+>>>>>>> fd3a4c3500b8eb92b328505ea08a29368e4ff9ee
     <Compile Include="Pages\CounterPage.cs" />
     <Compile Include="Pages\HomePage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

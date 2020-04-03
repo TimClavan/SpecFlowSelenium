@@ -100,10 +100,14 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 6
+<<<<<<< HEAD
     testRunner.Given("ik navigeer naar de home page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 7
     testRunner.Then("wordt de titel \"Hello, World!\" getoond", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+=======
+ testRunner.Then("the text \"Hello, World!\" is present", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+>>>>>>> fd3a4c3500b8eb92b328505ea08a29368e4ff9ee
 #line hidden
             }
             this.ScenarioCleanup();

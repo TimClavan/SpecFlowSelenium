@@ -47,7 +47,8 @@ namespace Blazor
         public void ThenIsDeCurrentCount(string p0, Table table)
         {
 
-            
+            StringAssert.AreEqualIgnoringCase(count, _blazorCounterPage.ControleerCount());
+            //_blazorCounterPage.ControleerCount()
             //_blazorCounterPage.ControleerCount( str, Table table);
             // ScenarioContext.Current.Pending();
         }
