@@ -14,5 +14,7 @@ Scenario: Test Increment button
 	Given ik navigeer naar de counter page
 	When ik klik op de increment button
 	Then is de current count <Waarde>
+
+	Examples: 
 	| Waarde |
 	| 1      |

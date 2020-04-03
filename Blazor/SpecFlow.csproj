@@ -115,13 +115,9 @@
   <ItemGroup>
     <Compile Include="Hooks\WebDriverSupport.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-<<<<<<< HEAD
     <Compile Include="Steps\BlazorCounterPageBindings.cs" />
     <Compile Include="Steps\BlazorHomePageBindings.cs" />
-=======
     <Compile Include="Steps\BlazorHomePageSteps.cs" />
-    <Compile Include="Steps\BlazorHomePageBinding.cs" />
->>>>>>> fd3a4c3500b8eb92b328505ea08a29368e4ff9ee
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -131,14 +127,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <None Include="app.config" />
     <None Include="Features\BlazorHomePageOpenen.feature" />
     <None Include="Features\BlazorCounterPage.feature" />
-=======
-    <None Include="Features\BlazorHomePage.feature" />
-    <None Include="Features\BlazorHomePageOpenen.feature" />
->>>>>>> fd3a4c3500b8eb92b328505ea08a29368e4ff9ee
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -44,10 +44,10 @@ namespace Blazor
         }
 
         [Then(@"is de current count (.*)")]
-        public void ThenIsDeCurrentCount(string p0, Table table)
+        public void ThenIsDeCurrentCount(string p0)
         {
 
-            StringAssert.AreEqualIgnoringCase(count, _blazorCounterPage.ControleerCount());
+            StringAssert.AreEqualIgnoringCase(p0, _blazorCounterPage.ControleerCount());
             //_blazorCounterPage.ControleerCount()
             //_blazorCounterPage.ControleerCount( str, Table table);
             // ScenarioContext.Current.Pending();
