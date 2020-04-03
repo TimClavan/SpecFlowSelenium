@@ -33,9 +33,9 @@ namespace Blazor
         }
 
 
-        public void ControleerCount()
+        public string ControleerCount()
         {
-            _chromeDriver.FindElement(By.XPath("//*[@class='col-sm-9']/component/strong"));
+            return _chromeDriver.FindElement(By.XPath("//*[@class='col-sm-9']/component/strong")).Text;
 
         }
     }

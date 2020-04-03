@@ -79,11 +79,7 @@ namespace Blazor.Features
         {
             string[] tagsOfScenario = ((string[])(null));
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Test openen home page", null, ((string[])(null)));
-<<<<<<< HEAD
-#line 5
-=======
-#line 3
->>>>>>> fd3a4c3500b8eb92b328505ea08a29368e4ff9ee
+#line 4
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -103,11 +99,10 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-<<<<<<< HEAD
-#line 6
+#line 5
     testRunner.Given("ik navigeer naar de home page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 7
+#line 6
     testRunner.Then("wordt de titel \"Hello, World!\" op de homepage getoond", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -120,7 +115,7 @@ this.ScenarioInitialize(scenarioInfo);
         {
             string[] tagsOfScenario = ((string[])(null));
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Test openen home page verifier welkomst tekst", null, ((string[])(null)));
-#line 9
+#line 8
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -140,19 +135,12 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 10
+#line 9
  testRunner.Given("ik navigeer naar de home page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 11
+#line 10
  testRunner.Then("wordt de tekst \"Welcome to your new single-page application.\" op de homepage geto" +
                         "ond", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-=======
-#line 4
- testRunner.Given("ik navigeer naar de home page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 5
- testRunner.Then("wordt de titel \"Hello, World!\" getoond", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
->>>>>>> fd3a4c3500b8eb92b328505ea08a29368e4ff9ee
 #line hidden
             }
             this.ScenarioCleanup();

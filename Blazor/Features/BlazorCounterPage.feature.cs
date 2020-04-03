@@ -146,12 +146,12 @@ this.ScenarioInitialize(scenarioInfo);
             this.ScenarioCleanup();
         }
         
-        [NUnit.Framework.TestCaseAttribute(TestName="Test Increment button")]
         [NUnit.Framework.DescriptionAttribute("Test Increment button")]
-        public virtual void TestIncrementButton()
+        [NUnit.Framework.TestCaseAttribute("1", null, TestName="Test Increment button(1)")]
+        public virtual void TestIncrementButton(string waarde, string[] exampleTags)
         {
-            string[] tagsOfScenario = ((string[])(null));
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Test Increment button", null, ((string[])(null)));
+            string[] tagsOfScenario = exampleTags;
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Test Increment button", null, exampleTags);
 #line 13
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -178,12 +178,8 @@ this.ScenarioInitialize(scenarioInfo);
 #line 15
  testRunner.When("ik klik op de increment button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-                TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
-                            "Waarde"});
-                table1.AddRow(new string[] {
-                            "1"});
 #line 16
- testRunner.Then("is de current count <Waarde>", ((string)(null)), table1, "Then ");
+ testRunner.Then(string.Format("is de current count {0}", waarde), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
